@@ -1,11 +1,12 @@
 import React from 'react'
+import '../CharactersCard/CharactersCard.css'
 
 function CharactersCard({ character }) {
     return (
         <div className="card-container">
             <header className="card-title-container">
                 <h1 className='card-title'>{character.name}</h1>
-                <img src={character.image} alt="character"/>
+                <img className='card-image' src={character.image} alt="character"/>
             </header>
             <body className="card-body">
                 <h2 className='card-house'>{character.house}</h2>

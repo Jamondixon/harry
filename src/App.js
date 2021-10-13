@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react'
-import CharactersContainer from './Pages/CharactersContainer'
+import CharactersContainer from './Pages/CharactersContainer/CharactersContainer.js';
+
 const baseURL = 'http://hp-api.herokuapp.com/api/characters';
 
 
@@ -14,10 +15,16 @@ function App() {
   }
 
   useEffect(getCharacters, [])
+  
   return (
-    <div className="App">
-      <CharactersContainer characters={characters}/>
-    </div>
+    <>
+      <div className="App">
+        <div className="title-container">
+          <h1 className="title">Welcome to the Wizarding World of Harry Potter</h1>
+        </div>
+        <CharactersContainer characters={characters}/>
+      </div>
+    </>
   );
 }
 

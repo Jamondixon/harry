@@ -1,4 +1,5 @@
-import CharactersCard from "./CharactersCard"
+import CharactersCard from "../CharactersCard/CharactersCard"
+import '../CharactersContainer/CharactersContainer.css'
 
 
 function CharactersContainer({ characters, clickAction }) {
@@ -8,7 +9,7 @@ function CharactersContainer({ characters, clickAction }) {
     })
 
     return (
-        <div className="character-container">
+        <div className="characters-container">
             {displayCharacters()}
         </div>
     )

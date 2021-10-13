@@ -1,0 +1,25 @@
+.card-container {
+    height: 100%;
+    width: 80%;
+    margin: 2em;
+    background: rgb(38, 37, 37);
+    text-align: center;
+    color: white
+}
+
+.card-image {
+    height: 200px;
+    width: 90%;
+    object-fit: cover;
+    
+}
+
+.card-body {
+    display: block;
+}
+
+.card-title {
+    font-family: Harry Potter;
+    font-size: 1.5em;
+
+}
